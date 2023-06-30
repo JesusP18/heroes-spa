@@ -1,6 +1,7 @@
 {
   "name": "heroes-spa",
   "private": true,
+  "homepage": "http://JesusP18.github.io/heroes-spa",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "gh-pages": "^5.0.0",
     "query-string": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
